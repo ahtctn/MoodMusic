@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "spotify-download-logo-30_50x50.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

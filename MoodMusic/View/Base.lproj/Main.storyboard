@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginScreen" customModule="MoodMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ood-fq-pay">
+                                <rect key="frame" x="56" y="533" width="319" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ANSWER THE QUESTIONS">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="TtF-5s-FV9" kind="showDetail" identifier="" id="nXM-EB-JUN"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appicon" translatesAutoresizingMaskIntoConstraints="NO" id="t5P-oF-YSB">
+                                <rect key="frame" x="79" y="69" width="226" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="answer, find your music" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WY-aV-Age">
+                                <rect key="frame" x="87" y="331" width="257" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mood Music" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1o-y1-pFi">
+                                <rect key="frame" x="91" y="288" width="248" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="LoginScreenColorSet"/>
+                    </view>
+                    <connections>
+                        <outlet property="startUsingAppButton" destination="ood-fq-pay" id="O7c-ER-mgk"/>
+                        <outlet property="subtitleLabel" destination="9WY-aV-Age" id="bGo-R2-8yP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30.697674418604652" y="-28.969957081545065"/>
+        </scene>
+        <!--Question View Controller-->
+        <scene sceneID="asz-hw-p0K">
+            <objects>
+                <viewController id="TtF-5s-FV9" customClass="QuestionViewController" customModule="MoodMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jFK-af-bUM">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SORU 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqc-UR-Uy0">
+                                <rect key="frame" x="20" y="109" width="390" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOM-XG-IT4">
+                                <rect key="frame" x="56" y="555" width="319" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CEVAP 1">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button1Pressed:" destination="TtF-5s-FV9" eventType="touchUpInside" id="3V4-bT-PxJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzB-km-dwy">
+                                <rect key="frame" x="56" y="637" width="319" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CEVAP 2">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button2Pressed:" destination="TtF-5s-FV9" eventType="touchUpInside" id="fxw-Bn-JzO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufI-AB-BF8">
+                                <rect key="frame" x="56" y="591" width="319" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SONUCA GİT">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resultButtonPressed:" destination="TtF-5s-FV9" eventType="touchUpInside" id="4dP-yk-3A5"/>
+                                    <segue destination="v9Q-f2-QGf" kind="showDetail" id="JEx-Ag-hgD"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1wD-Sq-Zrc">
+                                <rect key="frame" x="56" y="767" width="319" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nw5-am-ESt"/>
+                        <color key="backgroundColor" name="ColorSetQuestionScreen"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2bh-bE-QLZ"/>
+                    <connections>
+                        <outlet property="button1" destination="TOM-XG-IT4" id="GYm-WT-e89"/>
+                        <outlet property="button2" destination="hzB-km-dwy" id="6l3-it-DVk"/>
+                        <outlet property="progressBar" destination="1wD-Sq-Zrc" id="6L3-fV-IM1"/>
+                        <outlet property="questionLabel" destination="jqc-UR-Uy0" id="YdQ-yF-KNT"/>
+                        <outlet property="resultButton" destination="ufI-AB-BF8" id="hda-9C-DKS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nvl-WP-DeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="838.60465116279067" y="-29.613733905579402"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="zHq-UJ-GqT">
+            <objects>
+                <viewController id="v9Q-f2-QGf" customClass="ResultViewController" customModule="MoodMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r6L-5U-PYw">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="c6R-5I-avr">
+                                <rect key="frame" x="-285" y="-489" width="1000" height="1000"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Görünce Dünyamın Yıkıldığını" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocm-pU-WHG">
+                                <rect key="frame" x="42.333333333333343" y="555" width="345.33333333333326" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ofW-qv-lJT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şanışer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qk-XJ-VJX">
+                                <rect key="frame" x="186.66666666666666" y="597" width="56.666666666666657" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.19071920279999999" blue="0.92128556969999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="N3p-FW-sHB">
+                                <rect key="frame" x="58" y="698" width="314" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15l-D0-jMj">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="64"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="appleMusicLogo">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="appleMusicPressed:" destination="v9Q-f2-QGf" eventType="touchUpInside" id="v4v-af-C43"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1M-Tv-qO3">
+                                        <rect key="frame" x="120" y="0.0" width="74" height="64"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="spotifyLogo"/>
+                                        <connections>
+                                            <action selector="spotifyPressed:" destination="v9Q-f2-QGf" eventType="touchUpInside" id="SoP-wd-yZa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLq-7u-oxF">
+                                        <rect key="frame" x="240" y="0.0" width="74" height="64"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="youtubeMusicLogo"/>
+                                        <connections>
+                                            <action selector="youtubePressed:" destination="v9Q-f2-QGf" eventType="touchUpInside" id="Mna-t0-Vl3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fCk-dZ-lMC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fCk-dZ-lMC" firstAttribute="bottom" secondItem="N3p-FW-sHB" secondAttribute="bottom" constant="101" id="4xq-Nk-LDh"/>
+                            <constraint firstItem="N3p-FW-sHB" firstAttribute="top" secondItem="r6L-5U-PYw" secondAttribute="top" constant="698" id="61O-vm-wHf"/>
+                            <constraint firstAttribute="bottom" secondItem="ocm-pU-WHG" secondAttribute="bottom" constant="274" id="FkK-fo-vIh"/>
+                            <constraint firstItem="0Qk-XJ-VJX" firstAttribute="top" secondItem="ocm-pU-WHG" secondAttribute="bottom" constant="8" id="I0E-AE-qrR"/>
+                            <constraint firstItem="N3p-FW-sHB" firstAttribute="centerX" secondItem="0Qk-XJ-VJX" secondAttribute="centerX" id="RUS-Of-tzL"/>
+                            <constraint firstItem="ocm-pU-WHG" firstAttribute="top" secondItem="c6R-5I-avr" secondAttribute="bottom" constant="44" id="WJV-6P-Zqf"/>
+                            <constraint firstItem="N3p-FW-sHB" firstAttribute="centerX" secondItem="ocm-pU-WHG" secondAttribute="centerX" id="cqC-bp-ie3"/>
+                            <constraint firstItem="N3p-FW-sHB" firstAttribute="centerX" secondItem="r6L-5U-PYw" secondAttribute="centerX" id="fey-fR-ul9"/>
+                            <constraint firstItem="N3p-FW-sHB" firstAttribute="centerX" secondItem="c6R-5I-avr" secondAttribute="centerX" id="m2x-LB-beB"/>
+                            <constraint firstItem="N3p-FW-sHB" firstAttribute="top" secondItem="0Qk-XJ-VJX" secondAttribute="bottom" constant="44" id="xBh-Ub-FTa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dxd-fd-waK"/>
+                    <connections>
+                        <outlet property="appleMusic" destination="15l-D0-jMj" id="sCC-QU-Wlz"/>
+                        <outlet property="musicImage" destination="c6R-5I-avr" id="Uso-yR-xFX"/>
+                        <outlet property="musicName" destination="ocm-pU-WHG" id="daL-a2-1Kd"/>
+                        <outlet property="spotify" destination="G1M-Tv-qO3" id="5bv-HH-nkB"/>
+                        <outlet property="youtube" destination="vLq-7u-oxF" id="rTN-BG-RZi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQX-gp-jrR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646.5116279069766" y="-30.257510729613735"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appicon" width="1000" height="1000"/>
+        <image name="appleMusicLogo" width="50" height="50"/>
+        <image name="bg1" width="1000" height="1000"/>
+        <image name="spotifyLogo" width="50" height="50"/>
+        <image name="youtubeMusicLogo" width="50" height="50"/>
+        <namedColor name="ColorSetQuestionScreen">
+            <color red="0.13346117730000001" green="0.1128029451" blue="0.15888419749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LoginScreenColorSet">
+            <color red="0.19918650390000001" green="0.13378411530000001" blue="0.32314315440000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

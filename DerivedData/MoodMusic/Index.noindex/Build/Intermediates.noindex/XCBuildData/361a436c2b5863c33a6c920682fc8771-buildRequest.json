@@ -1,0 +1,59 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "cbe3f4f45f6d4e424b1d1610811c997a214db2514067cbec715aba4eb3fba610"
+    }
+  ],
+  "containerPath" : "/Users/ahmetalicetin/Desktop/SwiftDocs/MoodMusic/MoodMusic.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator16.0",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/ahmetalicetin/Desktop/SwiftDocs/MoodMusic/DerivedData/MoodMusic/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/ahmetalicetin/Desktop/SwiftDocs/MoodMusic/DerivedData/MoodMusic/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/ahmetalicetin/Desktop/SwiftDocs/MoodMusic/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/ahmetalicetin/Desktop/SwiftDocs/MoodMusic/DerivedData/MoodMusic/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/ahmetalicetin/Desktop/SwiftDocs/MoodMusic/DerivedData/MoodMusic/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/ahmetalicetin/Desktop/SwiftDocs/MoodMusic/DerivedData/MoodMusic/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/ahmetalicetin/Desktop/SwiftDocs/MoodMusic/DerivedData/MoodMusic/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
